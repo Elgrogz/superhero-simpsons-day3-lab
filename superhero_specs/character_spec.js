@@ -16,6 +16,9 @@ describe('Character', function() {
     assert.equal(200, homer.health);
   })
 
+  it('character can have fav food', function() {
+    assert.equal("Donut", homer.favFood);
+  }) 
 
 
 
