@@ -12,6 +12,10 @@ describe('Character', function() {
     assert.equal("Homer", homer.name);
   });
 
+  it('character can have health', function() {
+    assert.equal(200, homer.health);
+  })
+
 
 
 
