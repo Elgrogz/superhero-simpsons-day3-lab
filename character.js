@@ -3,6 +3,7 @@ var Character = function(name, health, favFood, catchphrase){
   this.health = health;
   this.favFood = favFood;
   this.catchphrase = catchphrase;
+  this.isBaddy = false;
 }
 
 Character.prototype = {
