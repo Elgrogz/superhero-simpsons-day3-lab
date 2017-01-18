@@ -1,14 +1,17 @@
 var Character = require('../character');
 var Food = require('../food');
+var Rat = require('../rat');
 var assert = require('assert');
 
 describe('Character', function() {
   var homer;
   var bacon;
   var donut;
+  var rat;
 
   beforeEach(function() {
     homer = new Character("Homer", 200, "Donut", "Doh!");
+    itchy = new Rat("Itchy");
     bacon = new Food("Bacon", 5);
     donut = new Food("Donut", 10);
   });
@@ -37,6 +40,12 @@ describe('Character', function() {
   it('charcter can gain extra health with fav food', function() {
     homer.eat(donut);
     assert.equal(215, homer.health);
+  });
+
+  it('character loses health with infected food', function() {
+    itchy.infect(bacon);
+    homer.eat(bacon);
+    assert.equal(195, homer.health);
   });
 
 
