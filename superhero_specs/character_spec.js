@@ -54,9 +54,10 @@ describe('Character', function() {
     assert.equal(false, homer.isBaddy);
   })
 
-  // it('character can become baddy', function() {
-  //   mrBurns.becomeBaddy()
-  // })
+  it('character can become baddy', function() {
+    mrBurns.becomeBaddy();
+    assert.equal(true, mrBurns.isBaddy);
+  })
 
 
 })
