@@ -12,4 +12,7 @@ describe('Food', function() {
     assert.equal("Donut", donut.type);
   });
 
+  it('food can have calories', function() {
+    assert.equal(10, donut.calories);
+  });
 });
