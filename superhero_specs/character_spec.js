@@ -20,9 +20,9 @@ describe('Character', function() {
     assert.equal("Donut", homer.favFood);
   }) 
 
-
-
-  // it('', function() {});
+  it('character can have catchphrase', function() {
+    assert.equal("Doh!", homer.catchphrase);
+  });
 
 
   // it('', function() {});
