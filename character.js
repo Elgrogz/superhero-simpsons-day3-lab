@@ -13,6 +13,9 @@ Character.prototype = {
     } else {
       this.health += food.calories;
     }
+  },
+  becomeBaddy: function() {
+    this.isBaddy = true;
   }
 
 }

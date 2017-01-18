@@ -5,12 +5,14 @@ var assert = require('assert');
 
 describe('Character', function() {
   var homer;
+  var mrBurns;
   var bacon;
   var donut;
   var rat;
 
   beforeEach(function() {
     homer = new Character("Homer", 200, "Donut", "Doh!");
+    mrBurns = new Character("Mr Burns", 100, "Catsup", "Excellent!");
     itchy = new Rat("Itchy");
     bacon = new Food("Bacon", 5);
     donut = new Food("Donut", 10);
@@ -48,6 +50,13 @@ describe('Character', function() {
     assert.equal(195, homer.health);
   });
 
+  it('character starts as not baddy', function() {
+    assert.equal(false, homer.isBaddy);
+  })
+
+  // it('character can become baddy', function() {
+  //   mrBurns.becomeBaddy()
+  // })
 
 
 })
