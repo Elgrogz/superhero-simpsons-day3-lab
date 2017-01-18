@@ -5,4 +5,10 @@ var Character = function(name, health, favFood, catchphrase){
   this.catchphrase = catchphrase;
 }
 
+Character.prototype ={
+  eat: function(food) {
+    this.health += food.calories;
+  }
+}
+
 module.exports = Character;

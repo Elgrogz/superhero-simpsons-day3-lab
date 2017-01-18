@@ -15,4 +15,5 @@ describe('Food', function() {
   it('food can have calories', function() {
     assert.equal(10, donut.calories);
   });
+  
 });
