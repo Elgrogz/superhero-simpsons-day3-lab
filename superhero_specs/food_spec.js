@@ -8,8 +8,8 @@ describe('Food', function() {
     donut = new Food("Donut", 10);
   });
 
-  it('food can have name', function() {
-    assert.equal("Donut", donut.name);
+  it('food can have type', function() {
+    assert.equal("Donut", donut.type);
   });
 
-})
+});
