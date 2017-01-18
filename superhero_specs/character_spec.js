@@ -34,5 +34,11 @@ describe('Character', function() {
     assert.equal(205, homer.health);
   });
 
+  it('charcter can gain extra health with fav food', function() {
+    homer.eat(donut);
+    assert.equal(215, homer.health);
+  });
+
+
 
 })
